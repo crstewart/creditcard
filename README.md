@@ -3,11 +3,11 @@ creditcard
 
 Here is a summary of the business rules for the credit card coding exercise. A more complete description of credit card number formats is on Wikipedia (http://en.wikipedia.org/wiki/Bank_card_number), but the rules below should be considered sufficient for the exercise.
 
-Visa: begin with a 4, can be 13 or 16 digits long
-Mastercard: begin with a 50, 51, 52, 53, 54, or 55, must be 16 digits long
-American Express: begin with a 34 or 37, must be 15 digits long
-Discover Card: begin with 6011 or 65, must be 16 digits long
-Other cards will be 12-19 digits long. 
+* Visa: begin with a 4, can be 13 or 16 digits long
+* Mastercard: begin with a 50, 51, 52, 53, 54, or 55, must be 16 digits long
+* American Express: begin with a 34 or 37, must be 15 digits long
+* Discover Card: begin with 6011 or 65, must be 16 digits long
+* Other cards will be 12-19 digits long. 
 
 Assume all cards using this library use the Luhn algorithm (http://en.wikipedia.org/wiki/Luhn_algorithm) for the check digit (which is the last digit).
 

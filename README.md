@@ -14,6 +14,7 @@ Assume all cards using this library use the Luhn algorithm (http://en.wikipedia.
 The Luhn algorithm works by adding the digits starting with the 2nd to last digit and moving left (towards the first digit). Double the value of the 2nd to last and then every 2nd digit from there on. If the doubled value is greater than 9, add those digits. The check digit will be the digit that when added makes the resulting sum a multiple of 10.
 
 For example, if the card number is 4567-8901-2345-6783:
+
     8 x 2 -> 16 -> 7  
     7 x 1       -> 7  
     6 x 2 -> 12 -> 3  
@@ -33,6 +34,7 @@ For example, if the card number is 4567-8901-2345-6783:
 The resulting sum is 7+7+3+5+8+3+4+1+0+9+7+7+3+5+8=77. The next multiple of 10 is 80, so the check digit is 80-77=3.  So the check digit on the card number 4567-8901-2345-6783 is valid.
 
 Another example, popular test card number 4111-1111-1111-1111 is also valid:
+
     1 x 2 -> 2  
     1 x 1 -> 1  
     1 x 2 -> 2  

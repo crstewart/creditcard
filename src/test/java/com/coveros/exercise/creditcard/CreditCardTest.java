@@ -8,6 +8,10 @@ package com.coveros.exercise.creditcard;
 
 import static org.junit.Assert.*;
 
+import com.coveros.exercise.creditcard.constants.CreditCardType;
+import com.coveros.exercise.creditcard.exceptions.BadCheckDigitException;
+import com.coveros.exercise.creditcard.exceptions.InvalidCardLengthException;
+import com.coveros.exercise.creditcard.exceptions.InvalidCardNumberException;
 import org.junit.Test;
 
 /**

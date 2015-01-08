@@ -29,7 +29,7 @@ public class CreditCard {
         String normalizedNumber = normalizeCardNumber(numberWithoutCheckDigit);
         int normalizedNumberLength = normalizedNumber.length();
         int totalValue = 0;
-        for (int i = 1; i < normalizedNumber.length(); i++) {
+        for (int i = 1; i <= normalizedNumberLength; i++) {
             char digit = normalizedNumber.charAt(normalizedNumberLength - i);
             int value = (int) digit - '0';
             if (i % 2 == 1) {
@@ -45,6 +45,6 @@ public class CreditCard {
     }
 
     private static String normalizeCardNumber(String cardNumber) {
-        return cardNumber.replaceAll("\\w-", "");
+        return cardNumber.replaceAll("[\\s\\-]", "");
     }
 }

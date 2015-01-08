@@ -6,5 +6,5 @@ package com.coveros.exercise.creditcard.exceptions;
  *
  * @author Craig Stewart
  */
-public class InvalidCardNumberException extends Exception {
+public abstract class InvalidCardNumberException extends Exception {
 }

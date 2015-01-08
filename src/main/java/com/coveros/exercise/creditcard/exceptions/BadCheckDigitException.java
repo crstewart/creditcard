@@ -6,5 +6,5 @@ package com.coveros.exercise.creditcard.exceptions;
  *
  * @author Craig Stewart
  */
-public class BadCheckDigitException extends Exception {
+public class BadCheckDigitException extends InvalidCardNumberException {
 }
